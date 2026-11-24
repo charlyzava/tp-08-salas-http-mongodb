@@ -31,7 +31,6 @@ function crearApp({ servicioReservas, formatoRegistro }) {
     res.render("inicio", { titulo: "Reservas de Salas" });
   });
 
-  // Se conserva el contrato de TP 07, ahora contando en MongoDB.
   app.get("/estado", controlador.estado);
 
   app.use("/api/reservas", crearRouterReservasApi(controlador));
